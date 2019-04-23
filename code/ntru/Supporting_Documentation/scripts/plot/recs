@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Primal"
+echo "ntruhps2048509 " $(grep 509 data/core_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhps2048677 " $(grep 677 data/core_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhps4096821 " $(grep 821 data/core_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhrss701 " $(grep 701 data/core_*_hrss_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+
+
+echo "Hybrid"
+echo "ntruhps2048509 " $(grep 509 data/hybrid_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhps2048677 " $(grep 677 data/hybrid_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhps4096821 " $(grep 821 data/hybrid_*_hps_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+echo "ntruhrss701 " $(grep 701 data/hybrid_*_hrss_pow2q.dat | cut -d, -f 4 | tr '\n' ' ')
+
